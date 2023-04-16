@@ -16,4 +16,4 @@ include:
   - board: bluemicro840_v1
     shield: sofle_left nice_view_adapter nice_view
   - board: bluemicro840_v1
-    shield: sofle_left nice_view_adapter nice_view
+    shield: sofle_right nice_view_adapter nice_view
