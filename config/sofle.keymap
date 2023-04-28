@@ -36,19 +36,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        first {
-      sensor-bindings = <&layer_rotate 1 0>;
-    };
-
-    second {
-      sensor-bindings = <&layer_rotate 2 0>;
-    };
-
-    third {
-      sensor-bindings = <&layer_rotate 2 1>;
-    };
-  };
-
         default_layer {
             label = "base";
 // ------------------------------------------------------------------------------------------------------------
@@ -65,7 +52,7 @@
                      &kp CLCK  &kp LALT  &mt LGUI MINUS &kp SPACE &lt 1 LBKT  &lt 2 RBKT &kp RET &mt RGUI EQUAL &kp RALT  &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&layer_rotate 1 0>;
         };
 
         lower_layer {
@@ -84,7 +71,7 @@
                  &trans    &trans   &trans    &ext_power EP_TOG &trans  &trans &trans    &trans   &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&layer_rotate 2 0>;
         };
 
         raise_layer {
@@ -103,6 +90,7 @@
                        &trans          &trans          &trans          &trans          &trans  &trans &ext_power EP_TOG  &trans     &trans   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&layer_rotate 2 1>;;
         };
     };
+}
