@@ -90,7 +90,7 @@
                        &trans          &trans          &trans          &trans          &trans  &trans &ext_power EP_TOG  &trans     &trans   &trans
             >;
 
-            sensor-bindings = <&layer_rotate 2 1>;;
+            sensor-bindings = <&layer_rotate 2 1>;
         };
     };
-}
+};
