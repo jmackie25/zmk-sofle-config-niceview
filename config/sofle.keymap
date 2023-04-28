@@ -33,10 +33,10 @@
     };
   };
 
-  keymap {
-    compatible = "zmk,keymap";
+    keymap {
+        compatible = "zmk,keymap";
 
-    first {
+        first {
       sensor-bindings = <&layer_rotate 1 0>;
     };
 
@@ -48,10 +48,6 @@
       sensor-bindings = <&layer_rotate 2 1>;
     };
   };
-};
-
-    keymap {
-        compatible = "zmk,keymap";
 
         default_layer {
             label = "base";
@@ -110,4 +106,3 @@
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
         };
     };
-};
