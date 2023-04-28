@@ -23,7 +23,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/rgb.h>
 
-/ {
   behaviors {
     layer_rotate: layer_rotate {
       compatible = "zmk,behavior-sensor-rotate-var";
@@ -48,9 +47,7 @@
       sensor-bindings = <&layer_rotate 2 1>;
     };
   };
-};
 
-/ {
     keymap {
         compatible = "zmk,keymap";
 
